@@ -15,22 +15,23 @@ int main(int argc, char *argv[])
   for(i=2; i<=argc; i++)
   {
     a[i-2] = atoi(argv[i-1]);
-    printf("%d ", a[i-2]);
-    /*for(k=2; k<=*(a+(i-2)); k++)
+    printf("%d ", a[i-2]);//debug
+    for(k=2; k<=*(a+(i-2)); k++)
     {
-      if(a[i-2]%k!=0)
+      if(a[i-2]%k==0)
       {
         j[i-2] = a[i-2];
         printf("%d ", j[i-2]);
         p++;
         break;
       }
-    }*/
+    }
+    //prime(a[i-1]);
   }
 
   for(i=0; i<j[p]; i++)
   {
-    printf("%d ", j[i]);
+    printf("%d \n", j[i]);
   }
   
   small = j[0];
@@ -46,6 +47,6 @@ int main(int argc, char *argv[])
 
 int prime(int k)
 {
-
+  
 
 }
