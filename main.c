@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
   {
     a[i-2] = atoi(argv[i-1]);
     printf("%d ", a[i-2]);
-    for(k=2; k<=*(a+(i-2)); k++)
+    /*for(k=2; k<=*(a+(i-2)); k++)
     {
       if(a[i-2]%k!=0)
       {
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
         p++;
         break;
       }
-    }
+    }*/
   }
 
   for(i=0; i<j[p]; i++)
