@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
     printf("%d ", j[i]);//debug
   }*/
 
-  for (i=0; i<argc; i++)
+  for (i=0; i<N; i++)
   {
     if(j[i]>=2)
     {
@@ -66,20 +66,25 @@ int main(int argc, char *argv[])
     printf("%d ", r[i]);//debug
   }*/
 
-  printf("The smallest number is %d\n", r[0]);
-  printf("The biggest number is %d\n", r[p-1]);
-
+  if(p==0)
+  {
+    printf("There are no prime numbers, Yay!\n");
+  }
+  else
+  {
+    printf("The smallest number is %d\n", r[0]);
+    printf("The biggest number is %d\n", r[p-1]);
+  }
   free(a);
   free(j);
   free(r);
-
 }
 
 int prime(int a)
 {
   int i;
  
-  for (i=2; i<=a/2; i++)
+  for (i=2; i<=a-1; i++)
   { 
    if(a%i==0)
    {
